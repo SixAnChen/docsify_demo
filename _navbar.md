@@ -7,5 +7,6 @@
   * [Gitee地址]()
 
 * 友情链接
-  * [Docsify]()
+  * [Docsify](https://docsify.js.org/ ':target=_blank')
+  * [Dumi](https://d.umijs.org ':target=_blank')
   * [博客园]()

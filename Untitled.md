@@ -1,4 +1,4 @@
-文档网站生成：https://d.umijs.org/、https://docsify.js.org/
+文档网站生成：https://d.umijs.org/、
 
 
 
