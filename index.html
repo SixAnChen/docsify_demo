@@ -84,31 +84,10 @@
         // 匹配到的字符串将被用来识别索引
         pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/
       },
-      count: {
-        countable: true,
-        position: 'top',
-        margin: '10px',
-        float: 'right',
-        fontsize: '.9em',
-        color: 'rgb(90,90,90)',
-        language: 'chinese',
-        localization: {
-          words: "",
-          minute: ""
-        },
-        isExpected: true
-      },
-      tabs: {
-        persist: true,      // default
-        sync: true,      // default
-        theme: 'classic', // default
-        tabComments: true,      // default
-        tabHeadings: true       // default
-      },
       progress: {
         position: "top",//默认上方
         color: "var(--theme-color,#42b983)",//进度条颜色
-        height: "3px",//进度条高度
+        height: "10px",//进度条高度
       }
     }
   </script>
@@ -121,10 +100,6 @@
   <!-- 搜索功能支持 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//polyfill.io/v3/polyfill.min.js?features=String.prototype.normalize"></script>
-  <!-- 字数统计 -->
-  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
-  <!-- 标签卡插件 -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
   <!-- 阅读进度条插件 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
 </body>
