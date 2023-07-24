@@ -2,7 +2,6 @@
 
 ![wallhaven-4yd2el](assets/wallhaven-4yd2el.jpg)
 
-# docsify <small>3.5</small>
 
 > 一个神奇的文档网站生成器。
 
