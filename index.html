@@ -17,7 +17,9 @@
 <body>
   <!-- 定义加载时候的动作 -->
   <div id="app">加载中...</div>
+
   <script>
+    // 搜索配置
     window.$docsify = {
       // 项目名称
       name: '鱼皮 - 编程学习路线',
@@ -30,20 +32,18 @@
       // 最大支持渲染的标题层级
       maxLevel: 4,
       // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级，建议配置为1或者2
-      subMaxLevel: 2
-    }
-  </script>
-  <script>
-    // 搜索配置
-    window.$docsify = {
+      subMaxLevel: 2,
+      auto2top: true,
+      loadSidebar: true,
+      loadNavbar: true,
       search: {
-        maxAge: 86400000,
-        paths: auto,
-        placeholder: '搜索',
-        noData: '找不到结果',
-        depth: 4,
-        hideOtherSidebarContent: false,
-        namespace: 'docsify-demo'
+        paths: 'auto',
+        placeholder: {
+          '/': '搜索'
+        },
+        noData: {
+          '/': '找不到结果'
+        },
       }
     }
   </script>
