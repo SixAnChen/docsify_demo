@@ -1,7 +1,5 @@
 <!-- _coverpage.md -->
 
-![wallhaven-4yd2el](assets/wallhaven-4yd2el.jpg)
-
 
 > 一个神奇的文档网站生成器。
 

@@ -2,18 +2,22 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Docsify文档网站生成器</title>
+  <meta charset="UTF-8">
+  <title>神奇的docsify</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-  <!-- 主题 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css">
+  <!-- 设置浏览器图标 -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <meta name="description" content="Description">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- 默认主题 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 </head>
 
 <body>
   <!-- 定义加载时候的动作 -->
-  <div id="app">正在加载中，请稍等...</div>
+  <div id="app">加载中...</div>
   <script>
     window.$docsify = {
       // 项目名称
@@ -29,32 +33,23 @@
       // 最大支持渲染的标题层级
       maxLevel: 4,
       // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级，建议配置为1或者2
-      subMaxLevel: 2,
+      subMaxLevel: 2
     }
   </script>
-
-
   <script>
+    // 搜索配置
     window.$docsify = {
-      // 完整配置参数
       search: {
-        maxAge: 86400000,               // 过期时间，单位毫秒，默认一天
-        paths: [],                      // or 'auto'，匹配文件路径
-        placeholder: 'Type to search',  // 搜索提示框文字， 支持本地化，例子在下面
-        // placeholder: {
-        //   '/zh-cn/': '搜索',
-        //   '/': 'Type to search'
-        // },
-        noData: 'No Results!',          // 找不到结果文字提示，支持本地化，例子在下面
-        // noData: {
-        //   '/zh-cn/': '找不到结果',
-        //   '/': 'No Results'
-        // },
-        depth: 2,                       // 搜索标题的最大程级, 1 - 6
+        maxAge: 86400000,
+        paths: auto,
+        placeholder: '搜索',
+        noData: '找不到结果',
+        depth: 4,
+        hideOtherSidebarContent: false,
+        namespace: 'docsify-demo',
       }
     }
   </script>
-
   <!-- docsify的js依赖 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <!-- emoji表情支持 -->
